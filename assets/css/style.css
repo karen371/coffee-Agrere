@@ -1,0 +1,294 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.pt-mono-regular {
+  font-family: "PT Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nav a {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.12rem;
+  font-weight: 300;
+  color: #a2a2a2;
+}
+.nav .buttons {
+  font-family: "PT Mono", monospace;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.title {
+  font-family: "PT Mono", monospace;
+  font-size: 4.4rem;
+  font-weight: 400;
+  color: #000;
+}
+
+.paragraph {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.description h1 {
+  font-family: "PT Mono", monospace;
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #000;
+}
+.description p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.12rem;
+  font-weight: 300;
+  margin-top: 15px;
+}
+
+i {
+  font-size: 4.4rem;
+}
+
+.coffee__section {
+  font-family: "PT Mono", monospace;
+  font-weight: 400;
+}
+.coffee__section h2 {
+  font-size: 1.8rem;
+}
+.coffee__section p {
+  font-size: 0.8rem;
+  color: #a2a2a2;
+}
+
+.nav {
+  margin-left: 1rem;
+  margin-top: 2rem;
+  /* Estilo para los botones */
+}
+.nav ul {
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav ul li {
+  display: inline;
+  margin-left: 1rem;
+}
+.nav ul li a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.nav a:hover {
+  text-decoration: underline;
+  color: #454545;
+}
+.nav__buttons {
+  float: right;
+  margin-right: 50px;
+  padding: 10px;
+}
+
+.header {
+  background-color: #fff;
+  padding: 1rem;
+  overflow: hidden;
+  /* Limpiar flotaciones */
+}
+.header__logo {
+  float: left;
+}
+.header__logo img {
+  width: 5vw;
+}
+.header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.clear::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 100%;
+  overflow: hidden;
+}
+.container__image {
+  float: left;
+  width: 70%;
+}
+.container__image img {
+  display: block;
+  width: 100%;
+}
+.container__title {
+  float: right;
+  width: 30%;
+  padding: 4rem;
+  box-sizing: border-box;
+}
+
+.container__description {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 17vw;
+}
+
+.description {
+  width: 40%;
+  position: relative;
+}
+.description div {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  right: 10%;
+}
+
+.image__description {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 60%;
+  background-color: #3c91e6;
+}
+
+.image__three {
+  position: absolute;
+  left: -20px;
+  bottom: -10px;
+  width: 25.5vw;
+  height: auto;
+  z-index: 0;
+}
+
+.image__one {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 25.5vw;
+  height: 19vw;
+  z-index: 1;
+}
+
+.image__two {
+  position: absolute;
+  transform: rotate(90deg);
+  width: 9vw;
+  right: 35%;
+  top: 13%;
+  z-index: 2;
+}
+
+.coffee__section {
+  display: flex;
+  position: absolute;
+  background-color: #fff;
+  width: 40vw;
+  height: 90px;
+  top: 90%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  z-index: 7;
+}
+
+.coffee__item {
+  width: 25%;
+  padding: 5px;
+  margin-right: 15px;
+  margin-left: 15px;
+  text-align: center;
+}
+
+.coffee__item--special {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #eacb31;
+  color: white;
+}
+.coffee__item--special div {
+  position: absolute;
+  background-color: #e4572e;
+  text-align: center;
+  padding: 5px;
+  top: -20px;
+  left: -20px;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+
+/* Estilos básicos para todos los botones */
+.buttons {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Transición suave para los cambios de color */
+}
+
+/* Estilo para el botón principal (blanco con letras grises) */
+.buttons {
+  background-color: #fff;
+  color: #a2a2a2;
+  border: 2px solid #a2a2a2;
+}
+
+/* Estilo para el botón secundario (verde con letras blancas) */
+.buttons--secundary {
+  background-color: #4ca866;
+  color: #fff;
+  border: 2px solid #4ca866;
+}
+
+/* Estilo para los botones al pasar el cursor por encima */
+.buttons:hover {
+  background-color: #eeeded;
+}
+
+.buttons--secundary:hover {
+  background-color: #9dcfab;
+}
+
+/* Estiliza la lista de navegación */
+.nav__list ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.nav__list ul li {
+  margin: 0 20px;
+}
+.nav__list ul a {
+  color: #a2a2a2;
+  text-decoration: none;
+}
+.nav__list ul a:hover {
+  text-decoration: underline;
+}
+
+main {
+  margin: 0;
+  width: 100vw;
+}
+
+/*# sourceMappingURL=style.css.map */

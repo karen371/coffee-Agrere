@@ -1,0 +1,112 @@
+@use '../abstracts/variables';
+.clear::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.container{
+    width: 100%;
+    overflow: hidden;
+    &__image{
+        float: left;
+        width: 70%;
+        img{
+            display: block;
+            width: 100%;
+        }
+    }
+    &__title {
+        float: right; 
+        width: 30%; 
+        padding: 4rem; 
+        box-sizing: border-box; 
+    }
+}
+.container__description{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 17vw; 
+}
+.description{
+    width: 40%;
+    position: relative;
+    div{
+        position: absolute;
+        top:30%;
+        left:10%;
+        right:10%;
+    };
+}
+.image__description {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 60%; 
+    background-color: variables.$color-details-secundary; 
+}
+
+.image__three{
+    position: absolute;
+    left: -20px; 
+    bottom: -10px; 
+    width: 25.5vw; 
+    height: auto;
+    z-index: 0; 
+}
+
+.image__one {
+    position: absolute; 
+    right: 0; 
+    top: 0; 
+    width: 25.5vw; 
+    height: 19vw;
+    z-index: 1; 
+}
+
+.image__two {
+    position: absolute;
+    transform: rotate(90deg); 
+    width: 9vw; 
+    right: 35%; 
+    top: 13%; 
+    z-index: 2;
+}
+
+.coffee__section {
+    display: flex;
+    position: absolute; 
+    background-color: variables.$color-white;
+    width: 40vw;
+    height: 90px;
+    top: 90%;
+    left: 55%;
+    transform: translate(-50%, -50%); 
+    z-index: 7;
+}
+.coffee__item {
+    width: 25%;
+    padding: 5px;
+    margin-right: 15px;
+    margin-left: 15px;
+    text-align: center;
+}
+.coffee__item--special{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: variables.$color-amarillo;
+    color: white;
+    div{
+        position: absolute;
+        background-color: variables.$color-details; 
+        text-align: center;
+        padding: 5px;
+        top: -20px; 
+        left: -20px; 
+        width: 100%; 
+        height: 100%; 
+        z-index: 3; 
+    }
+}

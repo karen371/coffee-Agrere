@@ -1,0 +1,66 @@
+@use '../abstracts/variables';
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.pt-mono-regular {
+    font-family: "PT Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+.nav{
+    & a{
+        font-family: "Roboto", sans-serif;
+        font-size: variables.$paragraph;
+        font-weight: 300;
+        color: variables.$color-letter-secundary;
+    }
+    & .buttons{
+        font-family: "PT Mono", monospace;
+        font-size: variables.$paragraph-secundary; 
+        font-weight: bold; 
+    }
+}
+
+.title{
+    font-family: "PT Mono", monospace;
+    font-size: variables.$title;
+    font-weight: 400;
+    color: variables.$color-letter;
+}
+.paragraph{
+    font-family: "Roboto", sans-serif;
+    font-size: variables.$paragraph-secundary;
+    font-weight: 300;
+}
+
+.description{
+    h1{
+        font-family: "PT Mono", monospace;
+        font-size: variables.$subtitle;
+        font-weight: 300;
+        color: variables.$color-letter;
+    }
+    p{
+        font-family: "Roboto", sans-serif;
+        font-size: variables.$paragraph;
+        font-weight: 300;
+        margin-top: 15px;
+    }
+}
+i{
+    font-size: variables.$title;
+}
+
+.coffee__section{
+    font-family: "PT Mono", monospace;
+    font-weight: 400;
+    h2{
+        font-size: variables.$subtitle-secundary;
+    }
+    p{
+        font-size: variables.$paragraph-secundary;
+        color: variables.$color-letter-secundary;
+    }
+}

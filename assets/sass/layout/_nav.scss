@@ -1,0 +1,37 @@
+@use '../abstracts/variables';
+
+.nav {
+    margin-left: 1rem;
+    margin-top: 2rem;
+    & ul {
+        float: left; 
+        list-style: none; 
+        margin: 0;
+        padding: 0;
+    }
+    & ul li {
+        display: inline; 
+        margin-left: 1rem; 
+    }
+    & ul li a {
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+    & a:hover {
+        text-decoration: underline; 
+        color: variables.$color-efecto; 
+    }
+    /* Estilo para los botones */
+    &__buttons {
+        float: right; 
+        margin-right: 50px;
+        padding: 10px;
+    }
+}
+
+
+
+
+
+
+

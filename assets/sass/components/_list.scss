@@ -1,0 +1,23 @@
+@use '../abstracts/variables';
+/* Estiliza la lista de navegación */
+.nav__list {
+    ul {
+        display: flex; 
+        list-style-type: none; 
+        margin: 0;
+        padding: 0;
+        
+        li {
+            margin: 0 20px; // Espaciado entre los elementos de la lista
+        }
+
+        a {
+            color: variables.$color-letter-secundary; // Color del texto
+            text-decoration: none; // Quita el subrayado
+
+            &:hover {
+                text-decoration: underline; // Subrayado en hover (opcional)
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+@use '../abstracts/variables';
+
+.header {
+    background-color: variables.$color-white;
+    padding: 1rem;
+    overflow: hidden;
+    &__logo{
+        float: left;
+        img{
+            width: 5vw;
+        }
+    }
+    /* Limpiar flotaciones */
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
